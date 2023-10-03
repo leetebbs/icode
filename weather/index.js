@@ -6,7 +6,7 @@ const rainElement = document.getElementById('rain')
 const windElement = document.getElementById('wind')
 const sunriseElement = document.getElementById('sunrise')
 const containerElement = document.getElementById('container')
-const btn = document.getElementById('btn');
+// const btn = document.getElementById('btn');
 
 
 
@@ -24,18 +24,18 @@ timeOfDay.textContent =(hour + ":" + minute );
 // Define the API URL
 const apiUrl = "https://api.open-meteo.com/v1/forecast?latitude=51.5085&longitude=-0.1257&hourly=precipitation_probability&daily=sunrise&current_weather=true&windspeed_unit=mph&timezone=GMT&forecast_days=7";
 
-var days = 0;
+// var days = 0;
 // Add the event listener for the button
-btn.addEventListener('click', () => {
-    if(days === 0){
-        days = 1;
-        fetch(apiUrl)
-    }else{
-        days = 0;
-        fetch(apiUrl)
-    }
-    console.log(days)
-})
+// btn.addEventListener('click', () => {
+//     if(days === 0){
+//         days = 1;
+//         fetch(apiUrl)
+//     }else{
+//         days = 0;
+//         fetch(apiUrl)
+//     }
+//     console.log(days)
+// })
 
 // Fetch data from the API
 fetch(apiUrl)
