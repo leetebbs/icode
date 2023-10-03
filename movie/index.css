@@ -1,0 +1,228 @@
+/* Add CSS here */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://raw.githubusercontent.com/leetebbs/storage/main/Top-Gun-Maverick-Dolby-Header.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 158, 158, 0.616);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 370px;
+    height: 650px;
+    background-color: white;
+    margin: auto;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.iframe-container {
+    display: none;
+    width: 250px;
+    height: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+.image {
+    background-image: url("https://raw.githubusercontent.com/leetebbs/storage/main/mav.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 25px 25px 0 0;
+    background-color: transparent;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+}
+
+.title {
+    font-family: 'Black Ops One', cursive;
+}
+
+.text {
+    color: #175993;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.categories {
+    font-size: 12px;
+    color: grey;
+}
+
+.maintext {
+    font-size: 14px;
+    color: rgb(110, 109, 109);
+    margin-top: 5px;
+}
+
+.actors {
+    position: relative;
+    margin-top: 20px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.name {
+    color: grey;
+    font-size: 12px;
+}
+
+.other1 {
+    border-radius: 50%;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    object-fit: cover;
+    animation: others1 2s ease-in ;
+}
+
+.other2 {
+    border-radius: 50%;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    object-fit: cover;
+    animation: others2 2s ease-in ;
+}
+
+@keyframes others1 {
+    from {
+        transform: translateX(-150px);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+}
+@keyframes others2 {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(0);
+    }
+    
+}
+
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 60px;
+
+}
+
+.tom {
+    position: absolute;
+    top: 10;
+    z-index: 5;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    width: 80px;
+    height: 80px;
+   animation: tom 3s ease-in-out infinite alternate;
+}
+
+@keyframes tom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+    
+}
+
+.footer {
+
+    background-color: #3ECBDD;
+    height: 90px;
+    border-radius: 0 0 25px 25px;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-size: 13px;
+}
+
+.play {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 180px;
+    left: 280px;
+    background-color: #eb052ce0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 0 0px rgba(235, 5, 44, 0.7);
+    
+}
+.play:hover {
+    box-shadow: 0 0 20px 10px rgba(235, 5, 44, 0.7);
+
+}
+
+.star {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+.score {
+    color: white;
+    font-size: 20px;
+    font-family: 800;
+}
+
+
+.star {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.cast{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.watch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
