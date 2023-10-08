@@ -49,7 +49,9 @@ body {
 }
 
 .number {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 35px;
     height: 25px;
     background-color: white;
