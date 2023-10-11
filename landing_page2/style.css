@@ -1,0 +1,231 @@
+/* Add CSS here */
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: #14203E;
+    /* background-color: rgb(90, 86, 86); */
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.menu span {
+    transition: background-color 0.8s ease;
+}
+
+.menu span:hover {
+    background-color: #455279;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.logo {
+    color: rgb(185, 179, 179);
+    font-weight: 700;
+    margin-right: 200px;
+}
+
+.loginBtn {
+    background-color: #F6F0E8;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.8s ease;
+}
+
+.loginBtn:hover {
+    background-color: #14203E;
+    color: white;
+}
+
+.trialBtn {
+    background-color: #14203E;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+}
+
+.trialBtn:hover {
+    background-color: #7182b6;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    border: 1px solid #F4E8D8;
+    background-color: #FFFCF8;
+}
+
+.container {
+    text-align: center;
+    gap: 30px;
+    width: 500px;
+    height: 300px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+
+    line-height: 60px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.container p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.heroBtn {
+    background-color: #14203E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.8s ease;
+}
+
+.heroBtn:hover {
+    background-color: #7182b6;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin: 30px;
+    gap: 10px;
+}
+
+.top hr {
+    width: 150px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card h1 {
+    color: #14203E;
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.date {
+    font-size: 12px;
+}
+
+.dropMenuContainer {
+    display: none;
+}
+
+.fa-bars {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .fa-bars {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .loginBtn {
+        margin-left: 20px;
+        padding: 10px;
+    }
+
+    .trialBtn {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .top p {
+        text-align: center;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropMenuContainer {
+        display: none;
+        font-size: 12px;
+    }
+
+    .dropMenu {
+        display: flex;
+        flex-direction: column;
+        margin-top: 80px;
+        background-color: white;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .dropMenu span:hover {
+        background-color: #14203E;
+        color: white;
+    }
+
+    .connect {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
