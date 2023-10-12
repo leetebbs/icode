@@ -1,0 +1,163 @@
+/* Add CSS here */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F4F5FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 650px;
+    height: 500px;
+    /* background-color: red; */
+}
+
+.menu {
+    width: 50%;
+    margin-left: 350px;
+    height: 70px;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu button {
+    /* background-color: pink; */
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu button:hover {
+    background-color: white;
+    transform: scale(1.05);
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+}
+
+h1 {
+    margin-right: 70%;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* margin: 10px; */
+}
+
+i {
+    padding: 20px;
+    color: grey;
+}
+
+.title {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.box {
+    width: 90%;
+    height: 120px;
+    /* background-color: green; */
+    border-radius: 15px;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.text {
+    font-size: 14px;
+}
+
+.help {
+    transition: background-color 0.8s ease;
+}
+
+.help:hover,
+.book {
+    background-color: #FFEFF3;
+}
+
+.people {
+    transition: background-color 0.8s ease;
+}
+
+.people:hover,
+.group {
+    background-color: #EFF2FF;
+}
+
+.podcasts {
+    transition: background-color 0.8s ease;
+}
+
+.podcasts:hover,
+.pod {
+    background-color: #E9FBED;
+}
+
+.speech {
+    transition: background-color 0.8s ease;
+}
+
+.speech:hover,
+.speak {
+    background-color: #FBF3E3;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .container {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+
+    .menu {
+        margin: 0 0;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .box {
+        height: auto;
+    }
+
+    .area {
+        width: 100%;
+    }
+}
