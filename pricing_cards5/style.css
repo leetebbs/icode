@@ -10,6 +10,12 @@
     --clr-3: #0e1850;
     --clr-4: #7A3AF4;
     --clr-5: #54587c;
+    --clr-6: #333333;
+    --clr-7: #6c6c6c;
+    --clr-8: #adadad;
+    --clr-9:  #493e04;
+    --clr-10: #bda72b;
+    --clr-11: #d1bf5a;
 }
 
 body {
@@ -22,7 +28,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.card {
+.card, .card2, .card3 {
     /* height: 60vh; */
     text-align: center;
     width: 260px;
@@ -50,9 +56,43 @@ body {
     animation: rotation 20s linear infinite;
 }
 
-.card::after {
+
+.card2::before,
+.card2::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),
+            var(--clr-6),
+            var(--clr-7),
+            var(--clr-8),
+            var(--clr-7),
+            var(--clr-6));
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+.card3::before,
+.card3::after {
+    content: "";
+    position: absolute;
+    inset: -0.5rem;
+    z-index: -1;
+    background: conic-gradient(from var(--gradient-angle),
+            var(--clr-9),
+            var(--clr-10),
+            var(--clr-11),
+            var(--clr-10),
+            var(--clr-9));
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+}
+
+
+.card::after, .card2::after, .card3::after {
     filter: blur(3.5rem);
 }
+
 
 @keyframes rotation {
     0% {
@@ -91,7 +131,7 @@ h2 {
     margin: 0 5px;
 }
 
-.buy-button {
+.buy-button, .buy-button2, .buy-button3 {
     color: white;
     border: 1px solid white;
     background-color: var(--clr-1);
@@ -102,6 +142,7 @@ h2 {
     transition: background-color 0.5s ease-in-out;
 }
 
+
 .storage {
     font-family: 'Merriweather', serif;
     font-size: 40px;
@@ -109,6 +150,12 @@ h2 {
 
 .buy-button:hover {
     background-color: var(--clr-4);
+}
+.buy-button2:hover {
+    background-color: var(--clr-7);
+}
+.buy-button3:hover {
+    background-color: var(--clr-9);
 }
 
 @media screen and (max-width: 508px) {
