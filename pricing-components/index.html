@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pricing Components</title>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="top">
+          <div class="card card1">
+              <h1>Free Plan</h1>
+              <p>Get a free plan with upto 5,000 active users and unlimited logins.</p>
+              <p>No credit card required.</p>
+              <button>Start for free</button>
+          </div>
+          <div class="card card2">
+              <p>What is your use case?</p>
+              <div class="box">
+                  <div class="left inner">B2C</div>
+                  <div class="center inner">B2B</div>
+                  <div class="right inner">B2E</div>
+              </div>
+          </div>
+      </div>
+      <div class="centered">
+          <div class="card card3">
+              <p>How many active users?</p>
+              <div class="slider-container">
+                  <input type="range" min="1000" max="10000" value="4000" class="slider" id="mySlider">
+                  <div class="rangeValues">
+                      <p>1,000</p>
+                      <p>10,000</p>
+                  </div>
+                  <div class="slider-value" id="sliderValue"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>

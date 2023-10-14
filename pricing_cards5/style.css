@@ -10,12 +10,12 @@
     --clr-3: #0e1850;
     --clr-4: #7A3AF4;
     --clr-5: #54587c;
-    --clr-6: #333333;
+    --clr-6: #292929;
     --clr-7: #6c6c6c;
     --clr-8: #adadad;
-    --clr-9:  #493e04;
-    --clr-10: #bda72b;
-    --clr-11: #d1bf5a;
+    --clr-9:  #221d06;
+    --clr-10: #a29444;
+    --clr-11: #978d49;
 }
 
 body {
@@ -31,8 +31,8 @@ body {
 .card, .card2, .card3 {
     /* height: 60vh; */
     text-align: center;
-    width: 260px;
-    margin: 20px;
+    width: 240px;
+    margin: 40px;
     padding: 40px;
     background: var(--clr-1);
     /* border: 5px solid var(--clr-4); */
@@ -70,7 +70,7 @@ body {
             var(--clr-7),
             var(--clr-6));
     border-radius: inherit;
-    animation: rotation 20s linear infinite;
+    animation: rotation 18s linear infinite;
 }
 .card3::before,
 .card3::after {
@@ -85,12 +85,12 @@ body {
             var(--clr-10),
             var(--clr-9));
     border-radius: inherit;
-    animation: rotation 20s linear infinite;
+    animation: rotation 15s linear infinite;
 }
 
 
 .card::after, .card2::after, .card3::after {
-    filter: blur(3.5rem);
+    filter: blur(1.5rem);
 }
 
 
@@ -155,7 +155,7 @@ h2 {
     background-color: var(--clr-7);
 }
 .buy-button3:hover {
-    background-color: var(--clr-9);
+    background-color: var(--clr-10);
 }
 
 @media screen and (max-width: 508px) {
